@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", 'Open Sans', sans-serif;
+}
+
+:root {
+    --color-principal: #214300;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    min-width: 220px;
+    justify-content: center;
+}
+
+header{
+    background-color: var(--color-principal);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+
+header .list-items{
+    display: flex;
+    max-width: 360px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items li a{
+    color: #fff;
+}
+
+header .menu{
+    margin: 0 40px;
+    justify-content: space-between;
+}
+
+.entrada-banner{
+    align-items: center;
+    justify-content: left;
+}
+
+
+.entrada-banner h2{
+    color: var(--color-principal);
+    max-width: 750px;
+    text-align: end;
+    letter-spacing: .2rem;
+    position: relative;
+}
+
+.entrada-banner h2 {
+    color: var(--color-principal);
+    max-width: 850px;
+    text-align: end;
+    letter-spacing: 0.2rem;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.entrada-banner h2.titulo::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    width: 80%;
+    height: 2px;
+    background-color: var(--color-principal);
+}
+
+.entrada-banner h2.titulo:last-of-type::after {
+    width: 60%;
+}
+
+.entrada-banner p{
+    color: var(--color-principal);
+    letter-spacing: .1rem;
+    font-size: 16px;
+    text-align: end;
+    margin-top: 80px;
+    position: relative;
+    right: 40px;
+}
+
+.text-apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.titulo{
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--color-principal);
+}
+
+.image-banner{
+    height: 440px;
+    position: relative;
+    right: 34px;
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .titulo{
+        font-size: 22px;
+    }
+}
+
+.conteudo-introducao{
+    background: var(--color-principal) url("assets/background-verde.png") no-repeat fixed center;
+    color: #fff;
+}
+
+
+
+.conteudo-introducao .flex-container{
+    flex-direction: column;
+}
