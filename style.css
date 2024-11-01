@@ -194,3 +194,12 @@ footer .left a{
     text-decoration: none;
     color: #000;
 }
+
+.logo-footer{
+    filter: invert(1);
+}
+
+.descricao-curta{
+    width: 250px;
+    margin-top: 20px;
+}
