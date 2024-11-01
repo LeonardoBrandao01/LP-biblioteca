@@ -137,14 +137,17 @@ header .menu{
     }
 }
 
-.conteudo-introducao{
+.conteudo-green{
     /*background: var(--color-principal) url("assets/background-verde.png") no-repeat fixed center;*/
     background-color: var(--color-principal);
     color: #fff;
 }
 
-.conteudo-introducao .flex-container{
+.conteudo-green .flex-container, .conteudo-white .flex-container{
     flex-direction: column;
+    gap: 20px;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 #servicos{
@@ -153,4 +156,41 @@ header .menu{
 
 #servicos .titulo{
     color: #fff;
+}
+
+footer{
+    border-top: 1px solid var(--color-principal);
+    padding: 40px;
+}
+
+.conteudo-white{
+    margin: 40px;
+}
+
+.footer.flex-container{
+    justify-content: space-between;
+}
+
+.footer .main-area{
+    width: 100%;
+}
+
+footer .left{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer .left ul li{
+    margin-bottom: 20px;
+}
+
+footer .left h5{
+    color: var(--color-principal);
+    margin-bottom: 20px;
+}
+
+footer .left a{
+    text-decoration: none;
+    color: #000;
 }
