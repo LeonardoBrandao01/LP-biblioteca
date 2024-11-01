@@ -138,12 +138,19 @@ header .menu{
 }
 
 .conteudo-introducao{
-    background: var(--color-principal) url("assets/background-verde.png") no-repeat fixed center;
+    /*background: var(--color-principal) url("assets/background-verde.png") no-repeat fixed center;*/
+    background-color: var(--color-principal);
     color: #fff;
 }
 
-
-
 .conteudo-introducao .flex-container{
     flex-direction: column;
+}
+
+#servicos{
+    padding: 40px;
+}
+
+#servicos .titulo{
+    color: #fff;
 }
