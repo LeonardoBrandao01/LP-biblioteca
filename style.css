@@ -53,6 +53,7 @@ header .list-items{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .list-items li a{
@@ -60,9 +61,16 @@ header .list-items{
 }
 
 header .menu{
+    gap: 20px;
     margin: 0 40px;
     justify-content: space-between;
 }
+
+header .menu li{
+    text-align: center;
+}
+
+
 
 .entrada-banner{
     align-items: center;
@@ -126,7 +134,7 @@ header .menu{
 }
 
 .image-banner{
-    height: 440px;
+    height: 420px;
     position: relative;
     right: 34px;
 }
@@ -135,6 +143,11 @@ header .menu{
     .titulo{
         font-size: 22px;
     }
+
+    .entrada-banner{
+        justify-content: center;
+    }
+
 }
 
 .conteudo-green{
@@ -205,4 +218,48 @@ footer .left a{
 .descricao-curta{
     width: 250px;
     margin-top: 20px;
+}
+
+/*Resposive rodape*/
+@media (max-width:768px){
+
+    .titulo{
+        font-size: 22px;
+    }
+
+    .entrada-banner{
+        flex-direction: column-reverse;
+    }
+
+    .entrada-banner p{
+        margin-top: 14px;
+    }
+
+    .entrada-banner h2.titulo::after{
+        display: none;
+    }
+
+    .text-apresentacao{
+        margin: 10px;
+        align-items: center;
+    }
+
+    .image-banner{
+        position: unset;
+        max-width: 280px;
+        height: 100%;
+    }
+
+    .text-apresentacao h2, .text-apresentacao p{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text-apresentacao p{
+        position: unset;
+    }
+
+    footer .left{
+        flex-direction: column;
+    }
 }
