@@ -8,6 +8,7 @@
 
 :root {
     --color-principal: #214300;
+
   }
 
 html{
@@ -56,6 +57,10 @@ header .list-items{
     gap: 20px;
 }
 
+.logo_header{
+    display: flex;
+    align-items: center;
+}   
 .list-items li a{
     color: #fff;
 }
@@ -129,8 +134,12 @@ header .menu li{
 .titulo{
     font-size: 34px;
     font-weight: 800;
-    text-transform: uppercase;
     color: var(--color-principal);
+}
+
+.titulo p{
+    font-size: 28px;
+    font-weight: 400;
 }
 
 .image-banner{
@@ -151,7 +160,7 @@ header .menu li{
 }
 
 .conteudo-green{
-    /*background: var(--color-principal) url("assets/background-verde.png") no-repeat fixed center;*/
+    background: var(--color-principal) url("assets/background-verde.png") repeat fixed center;
     background-color: var(--color-principal);
     color: #fff;
 }
@@ -163,28 +172,39 @@ header .menu li{
     font-size: 16px;
 }
 
-#servicos{
-    padding: 40px;
+#servicos, .conteudo-white{
+    padding: 120px 40px;
 }
 
 #servicos .titulo{
     color: #fff;
+    line-height: 1.2;
 }
 
 footer{
-    border-top: 1px solid var(--color-principal);
     padding: 40px;
 }
 
-.conteudo-white{
-    margin: 40px;
-}
-
 .footer.flex-container{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .footer .main-area{
+    width: 100%;
+}
+
+.footer .copy{
+    border-top: 1px solid #D9DBE9;
+    padding-top: 24px;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.footer .copy .text{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -194,8 +214,11 @@ footer .left{
     
 }
 
-footer .left ul li{
+footer .left ul li a{
     margin-bottom: 20px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
 }
 
 footer .left h5{
@@ -208,11 +231,17 @@ footer .left a{
     color: #000;
 }
 
+footer .left .endereço{
+    max-width: 200px;
+    line-height: 28px;
+    position: relative;
+    top: -4px;
+}
+
 .logo-footer{
-    max-width: 180px;
+    max-width: 112px;
     width: auto;
     height: auto;
-    filter: invert(1);
 }
 
 .descricao-curta{

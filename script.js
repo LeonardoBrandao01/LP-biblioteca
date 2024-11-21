@@ -47,6 +47,28 @@ function loadGoogleSheetData() {
     
             texto_servico.textContent = conteudo_texto_servico;
         }
+
+       /* if (data.length > 0 && data[0].length > 0) {
+            let texto_servico_extra = data[5][2];
+            
+            if (texto_servico_extra) { 
+                const novoParagrafo = document.createElement('p');
+                novoParagrafo.textContent = texto_servico_extra;
+
+                texto_servico.appendChild(novoParagrafo);
+            }
+        }
+        
+        if (data.length > 0 && data[0].length > 0) {
+            let texto_servico_extra = data[6][2];
+            
+            if (texto_servico_extra) { 
+                const novoParagrafo = document.createElement('p');
+                novoParagrafo.textContent = texto_servico_extra;
+
+                texto_servico.appendChild(novoParagrafo);
+            }
+        }*/
     });
 
     gapi.client.sheets.spreadsheets.values.get({
