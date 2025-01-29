@@ -428,12 +428,54 @@ footer .left .endereço{
         padding: 40px 40px;
     }
 
-    /*arrumar depois*/
-    .conteudo-gray{
-        display: none;
-    }
-
     footer .left{
         flex-direction: column;
     }
 }
+
+@media (max-width:1280px){
+
+    .message-box {
+        padding: 40px;
+        width: 100%;
+        margin: 0 auto;
+        top: 0;
+    }
+    
+    .message-box .titulo-conteudo{
+        font-size:22px;
+    }
+    
+    .message-box-reverse{
+        left: 0;
+        /* top: 0; */
+        gap: 0;
+        max-height: 300px;
+    }
+    
+    .conteudo-gray {
+        max-height: 100%;
+        background: #fff;
+    }
+        
+    .message-box {
+        text-align:center;
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    .message-box .titulo-conteudo{
+        text-align:center;
+    }
+    
+    .image-conteudo {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .image-conteudo img {
+        border-radius: 0px;
+        max-height: 300px;
+        object-fit: cover;
+    }
+    }
