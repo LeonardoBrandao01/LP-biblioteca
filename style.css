@@ -134,6 +134,7 @@ header .menu li{
     margin-top: 80px;
     position: relative;
     right: 40px;
+    max-width: 600px;
 }
 
 .text-apresentacao {
@@ -158,17 +159,6 @@ header .menu li{
     height: 420px;
     position: relative;
     right: 34px;
-}
-
-@media (min-width:768px) and (max-width:1200px) {
-    .titulo{
-        font-size: 22px;
-    }
-
-    .entrada-banner{
-        justify-content: center;
-    }
-
 }
 
 .conteudo-green{
@@ -369,8 +359,30 @@ footer .left .endereço{
     border-radius: 25% 0 25% 0;
  }
 
-/*Resposive rodape*/
-@media (max-width:768px){
+ @media (min-width:1080px) and (max-width:1280px) {
+    .titulo{
+        font-size: 22px;
+    }
+
+    .entrada-banner{
+        justify-content: center;
+    }
+
+    #servicos, .conteudo-white {
+        padding: 60px 40px;
+    }
+
+    .entrada-banner p {
+        font-size: 14px;
+        right: 22px;
+        max-width: 540px;
+    }
+
+}
+
+
+/*Resposive */
+@media (max-width:1080px){
 
     .titulo{
         font-size: 22px;
@@ -389,7 +401,7 @@ footer .left .endereço{
     }
 
     .text-apresentacao{
-        margin: 10px;
+        margin: 40px;
         align-items: center;
     }
 
@@ -410,6 +422,10 @@ footer .left .endereço{
 
     .text-apresentacao p{
         position: unset;
+    }
+
+    #servicos, .conteudo-white {
+        padding: 40px 40px;
     }
 
     /*arrumar depois*/
